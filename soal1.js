@@ -17,7 +17,7 @@ const biodata = {
         name: "SMK informatika",
         yearIn: 2018,
         yearOut: 2021,
-        major: null
+        major: "RPL"
     }],
     skills: [{
         skillName: "Bisa mengoperasikan HTML&CSS",
