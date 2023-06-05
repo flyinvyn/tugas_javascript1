@@ -1,13 +1,15 @@
-let printSegita = 5;
-
-if (typeof printSegita !== 'number') {
-    console.log("Data harus number");
-} else {
-    for (let i = printSegita; i >= 1; i--) {
-        let hasil = "";
-        for (let j = 1; j <= i; j++) {
-            hasil += j + " ";
-        }
-        console.log(hasil)
+const printSegita = (num) => {
+    if (typeof num !== 'number') {
+        return ("Data harus number");
     }
+    let result = "";
+    for (let i = num; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+            result += j + " ";
+        }
+        result += "\n";
+    }
+    return result;
 }
+const hasil = printSegita(5);
+console.log(hasil)
